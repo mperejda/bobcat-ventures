@@ -4,7 +4,7 @@
     %meta{ :charset => 'utf-8' }/
     %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1' }/
 
-    = display_meta_tags :site => 'Seed Site', :title => page_title, :reverse => true
+    = display_meta_tags :site => 'Den Delivery', :title => page_title, :reverse => true
 
     %meta{ :name => 'description', :content => '' }/
     %meta{ :name => 'viewport', :content => 'width=device-width' }/
@@ -28,12 +28,12 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        = link_to '#', :class=>'logo' do
-          =image_tag 'https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/sw_logo.png', alt: "spork wrangler", class: "img-responsive logo"
+        / = link_to '#', :class=>'logo' do
+        /   =image_tag 'https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/sw_logo.png', alt: "den delivery", class: "img-responsive logo"
       %nav.pull-right.collapse.navbar-collapse{:role=>:navigation}
         %ul.nav.navbar-nav
-          %li= link_to 'about', '#about'
-          %li= link_to 'team', '#team'
+          / %li= link_to 'about', '#about'
+          / %li= link_to 'team', '#team'
           %li= link_to 'contact', '#contact'
 
     = yield
