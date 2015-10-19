@@ -1,37 +1,37 @@
 %section.masthead.jumbotron
   .container
     .row.text-center.bottom-border
-      %h1 Den Delivery
-      %h4 College campus logistics.
+      %h1 Bobcat Ventures
+      %h4 Education, mentorship, and seed capital for college entrepreneurs.
       .col-sm-6.col-sm-offset-3
-        =image_tag "https://s3.amazonaws.com/den-delivery/splash-assets/iphone-logo-bg.png"
+        %img.img-circle{:alt => "Bates Bobcat", :src => "http://www.bates.edu/communications/files/2013/01/bates-bobcat-primary1.jpg", :style => "width: 380px; height: 480px;"}
 
-/ %section#about
-/   .container
-/     .row.text-center
-/       .col-sm-offset-1.col-sm-10
-/         .row
-/           %h2 About
-/           .col-sm-4.text-left
-/             =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/pic1.jpg", class: "img-responsive"
-/             %h4 Couriers
-/             %p Are you interested in the best job on campus? We provide comptetive compensation and competitive sports.
-/             = link_to "Get in touch", "#"
-/           .col-sm-4.text-left
-/             =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/pic2.jpg", class: "img-responsive"
-/             %h4 Campuses
-/             %p We are expading nationwide from the woods of Maine to the Gold Coast. Are you hungry?
-/             = link_to "Give us a holler", "#"
-/           .col-sm-4.text-left
-/             =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/pic3.jpg", class: "img-responsive"
-/             %h4 Community
-/             %p We provide our teams with the tools to learn the entreprenurial skillset and the ability to fund their education.
-/             = link_to "Learn more", "#"
-/ %section.divider
-/   .container
-/     .row.text-center
-/       .col-sm-offset-3.col-sm-6
-/         %hr
+%section#about
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        .row
+          %h2 About
+          .col-sm-4.text-left
+            =image_tag "https://s3.amazonaws.com/bobcat-ventures/splash/bv-whiteboarding.jpg", class: "img-responsive"
+            %h4 Learn
+            %p Focus on the fundamental skills and take action on your ideas.
+           
+          .col-sm-4.text-left
+            =image_tag "http://a3.mzstatic.com/us/r30/Purple3/v4/fb/47/18/fb4718bf-3654-7307-cbbe-cf0f495d1a47/icon175x175.png", class: "img-responsive"
+            %h4 Build
+            %p Design and release iterations of your product while building you business.
+           
+          .col-sm-4.text-left
+            =image_tag "http://a2.mzstatic.com/us/r30/Purple5/v4/f1/ca/d7/f1cad749-c13d-0d19-5aaf-19f03cf5327d/icon175x175.png", class: "img-responsive"
+            %h4 Earn
+            %p Compete for the resources to take your business to the next level.
+           
+%section.divider
+  .container
+    .row.text-center
+      .col-sm-offset-3.col-sm-6
+        %hr
  
 / %section#team
 /   .container
@@ -65,16 +65,14 @@
 /     .row.text-center
 /       .col-sm-offset-3.col-sm-6
 /         %hr
-/
-
-            
+           
 %section#contact
   .container
     .row
       .col-sm-8.col-sm-offset-2
         .row.text-center
           .col-sm-10.col-sm-offset-1
-            %h1 Tune in for deliciousness.
+            %h1 Signup for updates and application deadlines.
             = form_tag splash_signup_path, role: :form, :class=>'form-inline', :remote=>true do
               .form-group#signup
                 = text_field_tag :signup_email, '',  :class=>'form-control', :placeholder=>'E-mail'
